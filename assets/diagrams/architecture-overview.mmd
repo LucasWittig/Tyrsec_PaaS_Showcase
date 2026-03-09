@@ -1,0 +1,47 @@
+flowchart LR
+    U[Client / Dashboard]
+    G[API-Gateway]
+
+    subgraph S[Kernservices]
+      A[Auth Service]
+      R[Resident Service]
+      X[Access Service]
+      I[IoT Service]
+      C[Universal Connector]
+    end
+
+    subgraph D[Datenhaltung und Laufzeit]
+      P[(Relationale Datenhaltung)]
+      K[(Cache / Session / Queue-nahe Dienste)]
+    end
+
+    subgraph O[Observability]
+      M[Metrics]
+      V[Monitoring Dashboards]
+    end
+
+    E[Externe Integrationen]
+
+    U --> G
+    G --> A
+    G --> R
+    G --> X
+    G --> I
+    G --> C
+
+    A --> P
+    R --> P
+    X --> P
+    I --> P
+    A --> K
+    X --> K
+    C --> K
+
+    A --> M
+    R --> M
+    X --> M
+    I --> M
+    C --> M
+    M --> V
+
+    C --> E
