@@ -1,5 +1,0 @@
-Variante 1:
-Technischer Showcase-Auszug von TyrSec PaaS mit Architektur-, Security- und Deployment-Überblick. Enthält redigierte Dokumentation für öffentliche Einordnung; vollständiger Anwendungscode und Betriebsdetails bleiben privat.
-
-Variante 2:
-Öffentlicher Dokumentations-Showcase zu TyrSec PaaS: Systemarchitektur, Sicherheitsprinzipien und Betriebsmodell auf hoher Ebene. Quelle ist ein privates Implementierungs-Repository; Code und interne Runbooks sind nicht enthalten.
