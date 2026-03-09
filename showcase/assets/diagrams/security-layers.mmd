@@ -1,0 +1,17 @@
+flowchart TB
+    I[Identity und Access]
+    A[Authorization]
+    T[Tenant Isolation]
+    D[Data Protection]
+    U[Auditability]
+    B[Boundary Controls]
+    M[Monitoring und Detection]
+
+    I --> A
+    A --> T
+    T --> D
+    D --> U
+    U --> M
+    B --> I
+    B --> A
+    B --> T
