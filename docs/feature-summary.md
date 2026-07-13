@@ -17,6 +17,16 @@ Die folgenden Punkte fassen Funktionen zusammen, die in den privaten Projektdoku
 - dokumentierte Multi-Tenancy-Mechanismen auf Anwendungs- und Datenebene
 - Sicherheitsprinzipien nach Zero-Trust- und Fail-Closed-Ausrichtung
 
+## Community Ops (Gated-Community-Vertikale)
+
+- Gast-Einladungen mit temporären Zugangs-Credentials
+- Credential-Auslieferung über ein Outbox-Muster mit deterministischem lokalem Nachweis
+- Vendor-Verwaltung: Firmen- und Worker-Roster mit Freigabe- und Sperr-Workflow
+- Arbeitsaufträge mit unveränderlichen Revisionen und Einmal-Credentials
+- Security-Incident-Erfassung, verknüpft mit abgelehnten Zutrittsereignissen
+- Gate-/Geräteereignisse in der Demo als Simulation gekennzeichnet
+- Tenant-Isolation der Guest-/Vendor-Tabellen über PostgreSQL Row-Level Security, belegt durch dedizierte RLS- und Cross-Tenant-Tests
+
 ## Integrations- und Provider-Themen
 
 - Universal Connector als Integrationskomponente

@@ -6,6 +6,23 @@ Dieses Repository-Verzeichnis ist ein öffentlicher Showcase-Auszug aus dem priv
 
 TyrSec ist als modulare Plattform mit mehreren Backend-Services, einem Dashboard-Frontend, einem API-Gateway sowie zentralen Komponenten für Datenhaltung und Observability aufgebaut. Die zugrunde liegende Dokumentation im privaten Repository beschreibt zusätzlich Infrastrukturautomatisierung, Governance- und Security-Policies sowie den Integrationsansatz über einen Universal Connector.
 
+![TyrSec Dashboard – Übersicht](./assets/screenshots/dashboard-overview.png)
+
+*Dashboard-Frontend (React 19 / Material UI) im Standalone-Modus ohne Backend-Verbindung; Details zum Aufnahmekontext in [assets/screenshots/README.md](./assets/screenshots/README.md).*
+
+## Tech-Stack
+
+| Ebene | Technologien |
+|---|---|
+| Backend-Services | NestJS 11, TypeScript 5, Prisma ORM |
+| Frontend | React 19, Material UI (Dashboard); Next.js (Website) |
+| Datenhaltung | PostgreSQL 15 (mit Row-Level Security), Redis 7 |
+| Messaging | MQTT (Eclipse Mosquitto) |
+| Runtime | Docker / Docker Compose, Nginx als API-Gateway |
+| Orchestrierung | Kubernetes-Manifeste, Istio, ArgoCD (GitOps) |
+| Infrastructure as Code | Terraform-Module für AWS, Azure und GCP (Landing Zone, Object Store, Message Bus, IoT-Connectivity) |
+| Observability | Prometheus, Grafana, strukturiertes Logging mit Request-/Trace-Korrelation |
+
 ## Ziel und Umfang
 
 Der Showcase dokumentiert den technischen Rahmen des Systems für fachliche Einordnung, Architekturgespräche und Code-Review-orientierte Erstbewertung. Er ist keine Installationsanleitung und keine vollständige Betriebsdokumentation.
@@ -69,6 +86,19 @@ Der Showcase zeigt nicht nur Zielbilder, sondern auch reale, redigierte Implemen
 
 Mehr Tiefe:
 - [Implementierungsbeispiele (redigiert)](./docs/implementation-examples.md)
+- [Eigenständige Beispieldateien (.ts, .tf, .yaml, .conf)](./examples/README.md)
+
+## Was ist neu (Stand Juli 2026)
+
+Seit dem ersten Showcase-Stand (März 2026) wurde das private Projekt deutlich erweitert. Die folgenden Punkte sind dort umgesetzt und getestet; der Showcase dokumentiert sie auf redigierter Ebene:
+
+- **Community-Ops-Vertikale (Gated Community):** Gast-Einladungen mit temporären Zugangs-Credentials, Vendor-Verwaltung (Firmen-/Worker-Roster mit Freigabe und Sperrung), Arbeitsaufträge mit unveränderlichen Revisionen sowie Security-Incident-Erfassung bei abgelehnten Zutritten. Gate-/Geräteereignisse sind in der Demo simuliert.
+- **Credential Delivery Outbox:** Auslieferung temporärer Credentials über ein Outbox-Muster mit deterministischem lokalem Nachweis.
+- **Tenant-Isolation auf Datenbankebene:** PostgreSQL Row-Level Security für die kritischen Guest-/Vendor-Tabellen, abgesichert durch dedizierte RLS- und Cross-Tenant-E2E-Tests.
+- **Multi-Cloud-IaC ausgebaut:** Terraform-Module für AWS, Azure und GCP (Landing Zone, Object Store, Message Bus, IoT-Connectivity) passend zum Capability-Modell des Universal Connector.
+- **Deployment-Artefakte erweitert:** Kubernetes-Manifeste, Istio-Konfiguration und ArgoCD-GitOps-Definition für die Plattform.
+- **Qualitäts- und Demo-Tooling:** Reproduzierbarer Demo-Seed und Readiness-Check über die öffentliche API, Docker-Diagnose-Skripte sowie CI-Gates für Typecheck, Unit-Tests (400+ Tests), Build und Dependency-Audit.
+- **Neu in diesem Showcase:** eigenständige Beispieldateien unter [examples/](./examples/README.md), ein realer Dashboard-Screenshot mit dokumentiertem Aufnahmekontext und die [Export-Checkliste](./EXPORT-CHECKLIST.md) als explizite Redaktionsdisziplin.
 
 ## Dokumentationsübersicht
 

@@ -21,6 +21,8 @@ Die privaten Quelldokumente beschreiben TyrSec als serviceorientierte Plattform 
 | Resident Service | Domänenobjekte im Kontext von Bewohner- und Einheitenverwaltung |
 | Access Service | Regeln, Zugriffsvorgänge und Auswertung von Zugriffsereignissen |
 | IoT Service | Geräte-, Sensor- und Automatisierungsfunktionen |
+| Device Gateway | Anbindung von Geräte-/Gate-Ereignissen an die Plattform (in der Demo simuliert) |
+| AI Service | Anomalie-, Vorhersage- und Empfehlungsthemen als dokumentierte Bausteine |
 | Universal Connector | Provider- und Integrationslogik, inklusive Erweiterungs- und Monitoringbezug |
 
 ## Zusammenspiel auf hoher Ebene
