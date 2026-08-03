@@ -2,13 +2,13 @@
 
 ## Geltungsbereich
 
-Dieses Dokument gilt für den öffentlichen Showcase-Auszug unter `showcase/`. Es beschreibt Meldeweg und Grundprinzipien auf hoher Ebene. Detaillierte Abwehrkonfigurationen, interne Betriebsparameter und konkrete Implementierungsgrenzen werden nicht öffentlich dokumentiert.
+Dieses Dokument gilt für dieses öffentliche Showcase-Repository. Es beschreibt Meldeweg und Grundprinzipien auf hoher Ebene. Detaillierte Abwehrkonfigurationen, interne Betriebsparameter und konkrete Implementierungsgrenzen werden nicht öffentlich dokumentiert.
 
 ## Unterstützter Scope
 
 | Bereich | Status |
 |---|---|
-| Inhalte unter `showcase/` | unterstützt |
+| Inhalte dieses Showcase-Repositories | unterstützt |
 | Privater Anwendungscode und interne Betriebsartefakte | nicht Teil dieses öffentlichen Exports |
 
 ## Meldung von Sicherheitslücken
@@ -20,9 +20,7 @@ Vorgehen:
 2. Auswirkung, Annahmen und mögliche Bedingungen benennen.
 3. Meldung über einen nicht-öffentlichen Kanal senden.
 
-TODO: Offizielle Security-Kontaktadresse (z. B. dedizierte E-Mail oder Security-Formular) für den öffentlichen Export festlegen.
-
-Bis zur Festlegung eines offiziellen Kontakts sollten Maintainer einen vertraulichen Meldekanal manuell bereitstellen.
+Nutze für vertrauliche Meldungen die private Sicherheitsmeldung dieses Repositories: Reiter „Security" → „Report a vulnerability" (GitHub Security Advisories). Über diesen Weg bleibt die Meldung nicht-öffentlich, bis eine Abstimmung erfolgt ist. Ein alternativer vertraulicher Kanal ist auf Anfrage möglich.
 
 ## Sicherheitsprinzipien auf hoher Ebene
 
