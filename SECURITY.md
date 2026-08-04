@@ -51,7 +51,7 @@ Nutze für vertrauliche Meldungen die private Sicherheitsmeldung dieses Reposito
 - Eingabevalidierung und konsistente Fehlerbehandlung
 - zentrale Metrik- und Monitoring-Bausteine zur Erkennung von Auffälligkeiten
 
-## Beispielausschnitt 1: Fail-Closed bei Tenant-Mismatch (redigiert)
+## Beispielausschnitt 1: Fail-Closed bei Tenant-Mismatch
 
 Herkunft: Tenant-Middleware in der Service-Schicht.
 
@@ -71,7 +71,7 @@ if (tenantId) {
 
 Was der Ausschnitt zeigt: Tenant-Kontext wird technisch durchgesetzt und nicht nur fachlich angenommen.
 
-## Beispielausschnitt 2: Fehlerantwort mit Korrelation (redigiert)
+## Beispielausschnitt 2: Fehlerantwort mit Korrelation
 
 Herkunft: Standardisierter Error-Filter.
 

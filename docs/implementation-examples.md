@@ -1,4 +1,4 @@
-# Implementierungsbeispiele (redigiert)
+# Implementierungsbeispiele
 
 ## Zweck dieses Dokuments
 
@@ -30,8 +30,7 @@ Was dieser Ausschnitt zeigt:
 - Weitergabe von Request-/Trace-Kontext über Servicegrenzen
 - explizite Sperre für interne Routenmuster
 
-Was redigiert wurde:
-- konkrete Routenmuster und interne Service-Namen
+Die Platzhalter `<internal-service>` und `<internal-routes>` stehen für die tatsächlichen internen Service-Namen und Routenmuster.
 
 ## 2) Authentifizierung und Autorisierung
 
@@ -54,9 +53,6 @@ if (headerTenantId && jwtTenantId && headerTenantId !== jwtTenantId) {
 Was dieser Ausschnitt zeigt:
 - defensive Konsistenzprüfung zwischen signiertem Kontext und Headerwert
 - frühes Abweisen unplausibler Requests
-
-Was redigiert wurde:
-- keine internen Fehlermeldungsdetails
 
 ## 3) Tenant-Kontext und Isolation
 
@@ -81,9 +77,6 @@ Was dieser Ausschnitt zeigt:
 - technische Durchsetzung von Mandantentrennung
 - Fail-Closed statt stiller Degradation
 
-Was redigiert wurde:
-- interne Logging-Details
-
 ## 4) Secret-Handling und sichere Konfiguration
 
 ### Beispiel: Produktionspfad mit Secret-Preload und Cache
@@ -106,9 +99,6 @@ async getSecret(key: string): Promise<string> {
 Was dieser Ausschnitt zeigt:
 - klarer Produktions-/Nichtproduktionspfad
 - zentrale Secret-Auflösung statt verteilter Direktzugriffe
-
-Was redigiert wurde:
-- konkrete Secret-Namen
 
 ## 5) Auditierbarkeit und Nachvollziehbarkeit
 
@@ -133,9 +123,6 @@ Was dieser Ausschnitt zeigt:
 - einheitliches Fehlerformat
 - durchgängige Korrelation zwischen Gateway, Service und Logs
 
-Was redigiert wurde:
-- interne Mapping-Tabellen und vollständige Fehlercodesets
-
 ## 6) Container- und Betriebsmodell
 
 ### Beispiel: Sicherheits- und Verfügbarkeitsaspekte im Runtime-Stack
@@ -159,9 +146,6 @@ Was dieser Ausschnitt zeigt:
 - health-basierte Startabhängigkeiten
 - Betriebslogik direkt im Compose-Kontext
 
-Was redigiert wurde:
-- konkrete Service-Namen und Netzwerkdetails
-
 ## 7) Monitoring und Betriebsbeobachtung
 
 ### Beispiel: Mandantenfähige Metriken mit Label-Strategie
@@ -184,8 +168,7 @@ Was dieser Ausschnitt zeigt:
 - konsistente Label-Strategie für Betriebssicht
 - Basis für tenantbezogene Observability und SLO-Auswertung
 
-Was redigiert wurde:
-- konkrete Bucket- und Intervallwerte
+Die konkreten Histogram-Bucket-Grenzen sind hier weggelassen.
 
 ## 8) Integrationsmuster und Provider-Abstraktion
 
@@ -230,6 +213,3 @@ resource "aws_s3_bucket_public_access_block" "objectstore" {
 Was dieser Ausschnitt zeigt:
 - Brücke zwischen Laufzeit-Mandantenmodell und Infrastruktur-Namensschema
 - Security-Defaults auf Infrastrukturebene
-
-Was redigiert wurde:
-- konkrete Ressourcennamen und Umgebungsbezeichner

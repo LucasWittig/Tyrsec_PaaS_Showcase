@@ -1,4 +1,4 @@
-# Redigierte Implementierungsbeispiele (eigenständige Dateien)
+# Implementierungsbeispiele (eigenständige Dateien)
 
 Dieses Verzeichnis enthält die Implementierungsbeispiele aus
 [docs/implementation-examples.md](../docs/implementation-examples.md) als
@@ -10,17 +10,11 @@ eigenständige, syntaktisch vollständige Dateien.
   abgelegt, nicht nur als Codeblöcke in Markdown. Damit sind sie direkt
   lesbar, diff-bar und werden von GitHub korrekt als Quellcode erkannt.
 - Jede Datei entspricht einem Muster, das im privaten Repository produktiv
-  umgesetzt ist. Der Inhalt wurde für die Veröffentlichung redigiert.
+  umgesetzt ist. Passwörter, interne Namen und Betriebswerte sind durch
+  Platzhalter (`example`, `<redacted>`) ersetzt.
 
-## Redaktionsregeln
-
-Für alle Dateien in diesem Verzeichnis gilt (siehe auch
-[EXPORT-CHECKLIST.md](../EXPORT-CHECKLIST.md)):
-
-- keine echten Secrets, Tokens, Schlüssel oder Verbindungsdaten
-- keine internen Hostnamen, Routen-Muster oder Betriebsendpunkte
-- keine konkreten Schwellenwerte, Bucket-Grenzen oder Ausnahmelisten
-- Platzhalter sind als solche erkennbar (`example`, `<redacted>` u. ä.)
+Was nicht veröffentlicht wird, listet die
+[Export-Checkliste](../EXPORT-CHECKLIST.md).
 
 ## Übersicht
 

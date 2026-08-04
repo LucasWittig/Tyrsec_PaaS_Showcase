@@ -69,7 +69,7 @@ Die Quellen beschreiben ein containerbasiertes Betriebsmodell mit Gateway, Servi
 
 ## Technische Schwerpunkte
 
-Der Showcase zeigt nicht nur Zielbilder, sondern auch reale, redigierte Implementierungslogik aus dem Projekt. Die vollständigen Beispiele stehen in `implementation-examples.md`; hier nur drei Teaser:
+Der Showcase zeigt nicht nur Zielbilder, sondern auch reale Implementierungslogik aus dem Projekt. Die vollständigen Beispiele stehen in `implementation-examples.md`; hier nur drei Teaser:
 
 1. **Fail-Closed Tenant-Kontext in Middleware**
    - Tenant-Kontext wird primär aus signiertem JWT übernommen.
@@ -85,12 +85,12 @@ Der Showcase zeigt nicht nur Zielbilder, sondern auch reale, redigierte Implemen
    - Das reduziert Kopplung und unterstützt nachvollziehbare Zuordnung zwischen Laufzeit und Infrastrukturmodulen.
 
 Mehr Tiefe:
-- [Implementierungsbeispiele (redigiert)](./docs/implementation-examples.md)
+- [Implementierungsbeispiele](./docs/implementation-examples.md)
 - [Eigenständige Beispieldateien (.ts, .tf, .yaml, .conf)](./examples/README.md)
 
 ## Was ist neu (Stand Juli 2026)
 
-Seit dem ersten Showcase-Stand (März 2026) wurde das private Projekt deutlich erweitert. Die folgenden Punkte sind dort umgesetzt und getestet; der Showcase dokumentiert sie auf redigierter Ebene:
+Seit dem ersten Showcase-Stand (März 2026) wurde das private Projekt deutlich erweitert. Die folgenden Punkte sind dort umgesetzt und getestet; der Showcase dokumentiert sie in abstrahierter, öffentlich vertretbarer Form:
 
 - **Community-Ops-Vertikale (Gated Community):** Gast-Einladungen mit temporären Zugangs-Credentials, Vendor-Verwaltung (Firmen-/Worker-Roster mit Freigabe und Sperrung), Arbeitsaufträge mit unveränderlichen Revisionen sowie Security-Incident-Erfassung bei abgelehnten Zutritten. Gate-/Geräteereignisse sind in der Demo simuliert.
 - **Credential Delivery Outbox:** Auslieferung temporärer Credentials über ein Outbox-Muster mit deterministischem lokalem Nachweis.
@@ -98,7 +98,7 @@ Seit dem ersten Showcase-Stand (März 2026) wurde das private Projekt deutlich e
 - **Multi-Cloud-IaC ausgebaut:** Terraform-Module für AWS, Azure und GCP (Landing Zone, Object Store, Message Bus, IoT-Connectivity) passend zum Capability-Modell des Universal Connector.
 - **Deployment-Artefakte erweitert:** Kubernetes-Manifeste, Istio-Konfiguration und ArgoCD-GitOps-Definition für die Plattform.
 - **Qualitäts- und Demo-Tooling:** Reproduzierbarer Demo-Seed und Readiness-Check über die öffentliche API, Docker-Diagnose-Skripte sowie CI-Gates für Typecheck, Unit-Tests (400+ Tests), Build und Dependency-Audit.
-- **Neu in diesem Showcase:** eigenständige Beispieldateien unter [examples/](./examples/README.md), ein realer Dashboard-Screenshot mit dokumentiertem Aufnahmekontext und die [Export-Checkliste](./EXPORT-CHECKLIST.md) als explizite Redaktionsdisziplin.
+- **Neu in diesem Showcase:** eigenständige Beispieldateien unter [examples/](./examples/README.md), ein realer Dashboard-Screenshot mit dokumentiertem Aufnahmekontext und die [Export-Checkliste](./EXPORT-CHECKLIST.md), die festhält, was nicht veröffentlicht wird.
 
 ## Dokumentationsübersicht
 

@@ -42,7 +42,7 @@ Monitoring- und Metrikkomponenten sind Teil des Sicherheitsbetriebs. Sie unterst
 
 Die Policy-Ausrichtung setzt auf sichere Voreinstellungen und auf Ablehnung bei unvollständigem Sicherheitskontext. Dieses Fail-Closed-Verhalten ist ein zentrales Designprinzip für sensible Zugriffsentscheidungen.
 
-## Beispielhafte technische Umsetzung (redigiert)
+## Beispielhafte technische Umsetzung
 
 ### Praktische Designentscheidung: Tenant-Kontext als Sicherheitsgrenze
 

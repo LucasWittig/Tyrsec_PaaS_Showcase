@@ -33,7 +33,7 @@ Die privaten Quelldokumente beschreiben TyrSec als serviceorientierte Plattform 
 4. Monitoring-Komponenten erfassen technische Signale für Betrieb und Fehleranalyse.
 5. Der Universal Connector stellt Integrationslogik für externe Systeme über ein Capability-orientiertes Modell bereit.
 
-## Beispielhafte technische Umsetzung (redigiert)
+## Beispielhafte technische Umsetzung
 
 ### Designentscheidung: Gateway + Servicegrenzen
 
