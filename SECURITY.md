@@ -1,27 +1,3 @@
-# Security Policy und Sicherheitsüberblick
-
-## Geltungsbereich
-
-Dieses Dokument gilt für dieses öffentliche Showcase-Repository. Es beschreibt Meldeweg und Grundprinzipien auf hoher Ebene. Detaillierte Abwehrkonfigurationen, interne Betriebsparameter und konkrete Implementierungsgrenzen werden nicht öffentlich dokumentiert.
-
-## Unterstützter Scope
-
-| Bereich | Status |
-|---|---|
-| Inhalte dieses Showcase-Repositories | unterstützt |
-| Privater Anwendungscode und interne Betriebsartefakte | nicht Teil dieses öffentlichen Exports |
-
-## Meldung von Sicherheitslücken
-
-Bitte keine Sicherheitslücken über öffentliche Issues melden.
-
-Vorgehen:
-1. Verwundbarkeit mit betroffener Komponente und reproduzierbarer Beschreibung dokumentieren.
-2. Auswirkung, Annahmen und mögliche Bedingungen benennen.
-3. Meldung über einen nicht-öffentlichen Kanal senden.
-
-Nutze für vertrauliche Meldungen die private Sicherheitsmeldung dieses Repositories: Reiter „Security" → „Report a vulnerability" (GitHub Security Advisories). Über diesen Weg bleibt die Meldung nicht-öffentlich, bis eine Abstimmung erfolgt ist. Ein alternativer vertraulicher Kanal ist auf Anfrage möglich.
-
 ## Sicherheitsprinzipien auf hoher Ebene
 
 - Zero-Trust-orientierte Zugriffskontrolle
@@ -88,20 +64,3 @@ res.status(status).json({
 ```
 
 Was der Ausschnitt zeigt: Security- und Betriebsanalyse werden über konsistente Request-Korrelation unterstützt.
-
-## Interner Reifehinweis
-
-Im Projekt ist eine interne Security-Checkliste mit 27 definierten Kontrollpunkten dokumentiert; der aktuelle interne Stand nennt 27 von 27 als umgesetzt.
-
-Diese Angabe beschreibt den Erfüllungsgrad der projektspezifisch definierten Sicherheitskontrollen und ist keine absolute Sicherheitszusage.
-
-## Grenzen der öffentlichen Dokumentation
-
-Dieser Showcase enthält absichtlich keine low-level Sicherheitsdetails wie konkrete Tokenschemata, Schwellenwerte, Guard-Kombinationen, Ausnahmelisten, Regex-Pattern, interne Scan-Regeln oder betriebliche Endpunkte. Diese Trennung reduziert unnötige Offenlegung des Angriffsraums.
-
-## Responsible Disclosure
-
-Bei verantwortungsvoller Meldung wird erwartet, dass:
-- keine aktive Ausnutzung in produktiven Umgebungen erfolgt,
-- ausreichend Zeit für Bewertung und Behebung gegeben wird,
-- technische Details erst nach Abstimmung öffentlich gemacht werden.
